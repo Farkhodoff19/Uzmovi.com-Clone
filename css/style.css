@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helevetica', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------------------------------------------------ HEADER ----------------------------------------------*/
+.header-top {
+    background-color: #222933;
+}
+
+.header-top .logo {
+    padding: 20px 0;
+    margin-right: 129px;
+}
+
+.header-top nav {
+    display: flex;
+}
+
+.header-top nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-top nav ul li a {
+    padding: 50px 10px;
+    font-size: 14px;
+    color: #a5bbdc;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .5s ease;
+}
+
+.item-one a {
+    border-bottom: 3px solid #FF6907;
+    transition: all .5s ease;
+}
+
+.item-one a:hover {
+    transition: all .5s ease;
+    background-color: #FF6907;
+    background: rgba(255,105,7,.4);
+    color: #fff;
+}
+
+
+.item-two .dropdown-toggle {
+    padding: 50px 20px;
+    border-bottom: 3px solid #02B0E4;
+    transition: all .5s ease;
+}
+
+
+.item-two .dropdown-toggle:hover {
+    background-color: #02B0E4;
+    color:#fff;
+    background: rgba(2,176,228,.4);
+}
+
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+
+.dropdown-menu, .dropdown-menu1 {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 1000;
+    display: none !important;
+    width: 1110px;
+    padding: 10px 10px;
+    overflow: hidden;
+    font-size: 14px;
+    border: 1px solid #304156;
+    border-top: none;
+    text-align: left;
+    background: #232F3D;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgb(155 89 182 / 10%);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.dropdown-menu1 li::before, 
+.dropdown-menu li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1176px;
+    height: 4px;
+    background-color: #02B0E4;
+}
+
+.dropdown-menu1 li a, .dropdown-menu li a {
+    display: block;
+    padding: 10px 50px !important;
+    clear: both; 
+    flex-wrap: wrap;
+    font-weight: 400;
+    background: #304156;
+    text-align: center;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    color: #99b1d4;
+    border-radius: 3px;
+    margin: 10px;
+    text-transform: capitalize !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #02B0E4;
+    background: rgba(2,176,228,.4);
+}
+
+
+.item-three a {
+    border-bottom: 3px solid #FFC146;
+}
+
+.item-three a:hover {
+    background-color: #FFC146;
+    background: rgba(255,193,70,.4);
+    transition: all .5s ease;
+}
+
+
+.dropdown-menu1 {
+    flex-wrap: wrap;
+}
+
+.item-four .dropdown-toggle {
+    padding: 50px 20px !important;
+    border-bottom: 3px solid #02B0E4;
+    transition: all .5s ease;
+}
+
+.item-four .dropdown-toggle:hover {
+    background-color: #02B0E4;
+    color:#fff;
+    background: rgba(2,176,228,.4);
+}
+
+.item-five .dropdown-toggle {
+    padding: 50px 20px !important;
+    border-bottom: 3px solid #FF6907;
+    transition: all .5s ease;
+}
+
+.item-five .dropdown-toggle:hover {
+    background-color: #FF6907;
+    color:#fff;
+}
+
+
+.item-six a {
+    padding: 50px 20px !important;
+    border-bottom: 3px solid #9B59B6;
+    transition: all .5s ease;
+}
+
+.item-six a:hover {
+    color: #fff;
+    background-color: #9B59B6;
+}
+
+.item-seven  a {
+    padding: 50px 20px !important;
+    border-bottom: 3px solid #FF6907;
+    transition: all .5s ease;
+}
+
+.item-seven a:hover {
+    background-color: #FF6907;
+    color:#fff;
+}
+
+/* 
+************************
+************************
+-------------------------------------------------- SOCIAL --------------------------------------- 
+***********************
+***********************
+*/
+
+.social {
+    padding-top: 30px;
+    background-color: #131A20
+}
+
+.social-telegram {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    background: #389ce9;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.services form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.services form input {
+    height: 40px;
+    width: 100%;
+    background: #222933;
+    color: #99b1d4;
+    line-height: 40px;
+    border: 1px solid #313842;
+    padding: 0 40px 0 20px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.services form button {
+    position: absolute;
+    top: 0;
+    border: 1px solid #313842!important;
+    right: 0px;
+    padding: 8px 11px 9px 10px;
+    color: #99b1d4;
+    border-left: none!important;
+    background: #222933;
+    border: none;
+    font-size: 16px;
+}
+
+.services ul {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+
+.services ul li {
+    margin-left: 10px;
+}
+
+.services ul li a {
+    display: block;
+    text-align: center;
+    color: #a5bbdc;
+    line-height: 38px;
+    width: 40px;
+    background: #222933;
+    border: 1px solid #313842;
+    border-radius: 3px;
+    transition: background-color .3s ease;
+
+}
+
+.services ul li a:hover {
+    transition: background-color .3s ease;
+    background-color: #313842;
+}
+
+.services ul li a span {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #9B59B6;
+    font-size: 12px;
+    color: #fff;
+    top: 40px;
+    left: -20px;
+    display: none;
+}
+
+/* ------------------------------------------------ /HEADER ---------------------------------------- */
+
+/* ========================================================== HERO ==========================================*/
+.hero {
+    height: 705px;
+    background-color: #2E293F;
+}
+
+.hero h1 {
+    position: relative;
+    margin-bottom: 50px;
+    color: #a5bbdc;
+    padding-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.hero h1::after {
+    position: absolute;
+    top: 45px;
+    left: -17px;
+    content: "";
+    width: 8px;
+    height: 30px;
+    background-color: #9B59B6;
+}
+
+/*  ========================================================= SLIDER ========================================================= */
+.slider {
+    width: 1176px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slider {
+    transition: 2s;
+}
+
+.slider img {
+    width: 1176px;
+    height: 500px;
+}
+ 
+/* MANUAL SLIDER */
+
+.manual-slider {
+    position: absolute;
+    width: 1176px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/* SLIDER AUTO */
+.slider {
+    position: relative;
+}
+
+.slider-auto {
+    position: absolute;
+    display: flex;
+    width: 1176px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.slider-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    justify-content: center;
+}
+
+.slider i {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    cursor: pointer;
+    margin: -135px 0 0 -40px;
+    color: #1dd2af;
+    opacity: .8;
+    z-index: 200;
+    transition: all 1s ease;
+
+}
+
+.slider i:hover {
+    opacity: 1;
+    color: #17f3c7;
+    transition: color 1s ease;
+}
+
+.slider-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .slider-auto .auto-btn1 {
+    background: #fff;
+}
+
+#radio2:checked ~ .slider-auto .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~ .slider-auto .auto-btn3 {
+    background: #fff;
+}
+
+
+#radio4:checked ~ .slider-auto .auto-btn4 {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ========================================================= /SLIDER ========================================================= */
