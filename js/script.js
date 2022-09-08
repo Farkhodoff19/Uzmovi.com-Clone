@@ -3,8 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(function () {
         document.querySelector('#radio' + counter).checked = true;
         counter++;
-        if(counter > 4) {
+        if(counter > 6) {
             counter = 1;
         }
-    }, 3000)
+    }, 3000);
 })

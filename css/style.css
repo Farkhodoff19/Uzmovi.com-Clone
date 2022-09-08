@@ -5,6 +5,7 @@
 }
 
 body {
+    /* overflow: hidden; */
     font-family: 'Helevetica', sans-serif;
 }
 
@@ -425,6 +426,15 @@ img {
     justify-content: center;
 }
 
+.slider span  {
+    position: absolute;
+    top: 380px;
+    left: 40px;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 4px 4px 0 #000;
+}
+
 .slider i {
     font-size: 80px;
     width: 80px;
@@ -469,20 +479,309 @@ img {
 #radio4:checked ~ .slider-auto .auto-btn4 {
     background: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  ========================================================= /SLIDER ========================================================= */
+
+/* ============================================== MOVIES ============================================== */
+.movies {
+    background-color: #131A20;
+    height: 2000px;
+}
+.movies-wrapper {
+    overflow: hidden;
+    max-width: 805px !important;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.movies-heading {
+    position: relative;
+    padding-top: 50px;
+    display: block;
+    color: #a5bbdc;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;    
+    margin-left: 20px;
+}
+
+
+.movies-heading::after {
+    position: absolute;
+    top: 45px;
+    left: -17px;
+    content: "";
+    width: 8px;
+    height: 30px;
+    background-color: #02B0E4;
+}
+
+.movies-wrapper ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.movies-wrapper ul li {
+    position: relative;
+    background-color: #1d232c;
+    border: 1px solid #1d232c;
+}
+
+.movies-wrapper ul li::after {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 22px;
+    height: 10px;
+    background-image: url(../images/new.gif);
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.movies-wrapper ul li::before {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    background: #FC1A3F;
+    content: "2022";
+    z-index: 9;
+}
+
+
+.movies-wrapper ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.movies-wrapper ul li img {
+    position: relative;
+    width: 180px;
+    height: 270px;
+    padding: 20px 10px 10px 10px;
+}
+
+.pre-btn,
+.next-btn {
+    position: absolute;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 15px;
+    background-color: #02B0E4;
+    z-index: 9;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
+.pre-btn {
+    margin-left: -20px;
+}
+
+.next-btn {
+    margin-left: 763px;
+}
+
+.pre-btn:hover,
+.next-btn:hover {
+    opacity: 0.7;
+} 
+
+.movies-wrapper ul li a {
+    position: relative;
+    color: #99b1d4;
+    font-size: 13px;
+    line-height: 1.3;
+    display: block;
+    text-align: center;
+    height: 54px;
+    overflow: hidden;
+    text-transform: uppercase;
+    background: #222933;
+    padding: 20px 0px 10px 0px;
+}
+
+.movies-wrapper ul li a:hover {
+    background-color: #232F3D;
+}
+
+.cartoon-anon {
+    display: flex;
+    align-items: center;
+}
+
+.cartoon-wrapper {
+    max-width: 400px !important;
+    margin-right: 50px;
+}
+
+.cartoon-heading {
+        position: relative;
+        padding-top: 50px;
+        display: block;
+        color: #a5bbdc;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 30px;    
+        margin-left: 20px;  
+}
+
+.cartoon-heading::before {
+    position: absolute;
+    top: 45px;
+    left: -17px;
+    content: "";
+    width: 8px;
+    height: 30px;
+    background-color: #FC1A3F;
+}
+
+ol {
+    display: flex;
+    align-items: center;
+}
+
+ol li {
+    position: relative;
+    width: 500px;
+}
+
+ol li i {
+    position: absolute; 
+    top: 25%;
+    left: 40%;
+    color: #FC1A3F;
+    padding: 15px 20px;
+    background-color: black;
+    font-size: 25px;
+    border: 10px solid #1d232c;
+    border-radius: 50%;
+}
+
+ol li i:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+ol li:not(:last-child) {
+    margin-right: 20px;
+}
+
+ol li img {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+ol li a {
+    position: relative;
+    color: #99b1d4;
+    font-size: 13px;
+    line-height: 1.3;
+    display: block;
+    text-align: center;
+    height: 54px;
+    overflow: hidden;
+    text-transform: uppercase;
+    background: #222933;
+    padding: 20px 0px 10px 0px; 
+}
+
+ol li a:hover {
+    background-color: #232F3D;
+}
+
+.prev,
+.next {
+    position: absolute;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 15px;
+    background-color: #FC1A3F;
+    z-index: 9;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.prev {
+    margin-left: -20px;
+}
+
+.next {
+    margin-left: 380px;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 0.8;
+}
+
+.anon-heading {
+    position: relative;
+    padding-top: 50px;
+    display: block;
+    color: #a5bbdc;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;    
+    margin-left: 20px;
+}
+
+.anon-heading::before {
+    position: absolute;
+    top: 45px;
+    left: -17px;
+    content: "";
+    width: 8px;
+    height: 30px;
+    background-color: #FFC146;
+}
+
+.anons-wrapper {
+    width: 300px;
+}
+
+.anons-wrapper img {
+    
+    width: 80px;
+    height: 60px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+.anons-wrapper img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.anon {
+    background-color: #1d232c;
+}
+
+.anon:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.anon a {
+    font-size: 12px;
+    color: #99b1d4;
+}
+
+.anon-btn {
+    position: absolute;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 8px;
+    background-color: #304156;
+    cursor: pointer;
+}
+/* ============================================== /MOVIES ============================================== */
