@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -484,7 +484,7 @@ img {
 /* ============================================== MOVIES ============================================== */
 .movies {
     background-color: #131A20;
-    height: 2000px;
+    height: 7100px;
 }
 .movies-wrapper {
     overflow: hidden;
@@ -608,6 +608,8 @@ img {
     background-color: #232F3D;
 }
 
+/* CARTOON */
+
 .cartoon-anon {
     display: flex;
     align-items: center;
@@ -619,15 +621,15 @@ img {
 }
 
 .cartoon-heading {
-        position: relative;
-        padding-top: 50px;
-        display: block;
-        color: #a5bbdc;
-        font-weight: bold;
-        font-size: 16px;
-        text-transform: uppercase;
-        margin-bottom: 30px;    
-        margin-left: 20px;  
+    position: relative;
+    padding-top: 50px;
+    display: block;
+    color: #a5bbdc;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;    
+    margin-left: 20px;  
 }
 
 .cartoon-heading::before {
@@ -723,6 +725,8 @@ ol li a:hover {
     opacity: 0.8;
 }
 
+/* ANONS */
+
 .anon-heading {
     position: relative;
     padding-top: 50px;
@@ -784,4 +788,124 @@ ol li a:hover {
     background-color: #304156;
     cursor: pointer;
 }
+
+/* SUBSCRIBE */
+.subscribe-inner {
+    max-width: 300px;
+}
+
+.subscirbe-title {
+    position: relative;
+    color: #99b1d4;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.subscirbe-title::before {
+    position: absolute;
+    top: -5px;
+    left: -17px;
+    content: "";
+    width: 8px;
+    border-radius: 5px 0 0 0;
+    height: 30px;
+    background-color: #9B59B6;
+}
+
+.fa-telegram {
+    color: #fff;
+    border-radius: 15px 0 0 15px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: #02B0E4;
+}
+
+.fa-youtube {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    background-color: #FC1A3F;
+}
+
+.fa-tiktok {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    background-color: #222;
+}
+
+.fa-instagram {
+    color: #fff;
+    border-radius: 0 15px 15px 0px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: #9B59B6;
+}
+
 /* ============================================== /MOVIES ============================================== */
+
+
+
+/* ============================================= FOOTER =============================================  */
+
+footer {
+    background-color: #222933;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    padding: 50px 0;
+    margin-right: 50px;
+}
+
+.footer-top ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.footer-top ul li a {
+    color: #99b1d4;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #304156;
+    transition: background-color .3s ease;
+}
+
+.footer-top ul li a:hover {
+    background-color: #304156;
+    transition: background-color .3s ease;
+}
+
+.footer-top ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.notion {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.footer-copyright {
+    width: 100%;
+    background-color: #131A20;
+    color: #99b1d4;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.footer-copyright p {
+    padding-top: 30px;
+}
+
+/* ============================================= /FOOTER =============================================  */
