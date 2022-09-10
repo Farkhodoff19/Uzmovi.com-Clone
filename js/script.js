@@ -7,4 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
             counter = 1;
         }
     }, 3000);
+
+    const circle = document.querySelector('circle'),
+    anon = document.querySelector('.b71609');
+    circle.addEventListener('click', () => {
+        anon.style.display = 'none'
+    })
 })

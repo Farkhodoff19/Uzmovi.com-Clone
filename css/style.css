@@ -484,8 +484,9 @@ img {
 /* ============================================== MOVIES ============================================== */
 .movies {
     background-color: #131A20;
-    height: 7100px;
+    height: 2100px;
 }
+
 .movies-wrapper {
     overflow: hidden;
     max-width: 805px !important;
@@ -495,7 +496,7 @@ img {
 
 .movies-heading {
     position: relative;
-    padding-top: 50px;
+    padding-top: 30px;
     display: block;
     color: #a5bbdc;
     font-weight: bold;
@@ -508,7 +509,7 @@ img {
 
 .movies-heading::after {
     position: absolute;
-    top: 45px;
+    top: 24px;
     left: -17px;
     content: "";
     width: 8px;
@@ -754,8 +755,7 @@ ol li a:hover {
 }
 
 .anons-wrapper img {
-    
-    width: 80px;
+     width: 80px;
     height: 60px;
     margin-right: 5px;
     object-fit: cover;
@@ -790,7 +790,15 @@ ol li a:hover {
 }
 
 /* SUBSCRIBE */
+
+.moviess{
+    position: relative;
+}
+
 .subscribe-inner {
+    position: absolute;
+    top: 33px;
+    left: 837px;
     max-width: 300px;
 }
 
@@ -841,6 +849,194 @@ ol li a:hover {
     font-size: 40px;
     padding: 10px;
     background-color: #9B59B6;
+}
+
+/* RANDOM FILMS */
+.random-film h2 {
+    position: relative;
+    margin-top: 20px;
+    color: #99b1d4;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.random-film h2::before {
+    position: absolute;
+    top: -5px;
+    left: -17px;
+    content: "";
+    width: 8px;
+    background-color: #02B0E4;
+    border-radius: 5px 0 0 0;
+    height: 30px;   
+}
+
+.random-film ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.random-film ul li {
+    position: relative;
+    border-radius: 5px;
+    background-color: #304156;
+    margin-bottom: 20px;
+}
+
+.random-film ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.random-film ul li img {
+    width: 256px;
+    height: 280px;
+    border: 5px solid #1d232c;
+    padding: 30px 10px 10px 10px;
+}
+
+
+.random-film ul li a {
+    color:#99b1d4;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    text-align: center;
+    display: block;
+    background-color: #232F3D;
+    transition: all .3s ease;
+}
+
+.random-film ul li a:hover {
+    background-color: #304156;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.reklama {
+    margin-bottom: 20px;
+}
+
+/* FILMS */
+.film-link {
+    background-color: #304156;
+    color: #99b1d4;
+    padding: 10px 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    transition: all .3s ease;
+
+}
+.film-link:hover {
+    background-color: #9B59B6;
+    transition: all .3s ease;
+    color: #fff;
+}
+
+.films-top {
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    background-color: #304156;
+    color: #99b1d4;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all .3s ease;
+}
+
+.films-top:hover {
+    cursor: pointer;
+    background-color: #232F3D;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.films-inner {
+    display: flex;
+    align-items: center;
+    background-color: #304156;
+}
+
+.films-inner:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+
+.films-inner img {
+    border: 5px solid #222;
+    margin: 10px;
+    width: 70px;
+    height: 97px;
+}
+
+.films-inner h3 {
+    color: #99b1d4;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.films-inner a {
+    font-size: 12px;
+    color: #99b1d4;
+    text-transform: capitalize;
+    background-color: #1d232c;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.films-inner a:not(:last-child) {
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.films-inner a:hover {
+    background-color: #99b1d4;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.otsenka {
+    display: flex;
+    align-items: center;
+}
+
+.otsenka span {
+    border: 1px solid #222933;
+    padding: 4px;
+    color: green;
+    background-color: #222933;
+} 
+
+.otsenka i {
+    border: 1px solid #222933;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.fa-thumbs-up {
+    color: green;
+
+}
+
+.fa-thumbs-up:hover {
+    background-color: rgb(5, 73, 5);
+    color: #fff;
+
+}
+
+.fa-thumbs-down {
+    color: rgb(129, 35, 35);
+
+}
+
+.fa-thumbs-down:hover {
+    background-color: rgb(185, 7, 7);
+    color: #fff;
 }
 
 /* ============================================== /MOVIES ============================================== */
